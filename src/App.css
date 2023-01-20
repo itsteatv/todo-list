@@ -1,0 +1,36 @@
+:root {
+  --primary-color: #131316;
+  --secondary-color: #fff;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background: var(--background-color);
+  color: var(--color);
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  touch-action: pan-y;
+}
+
+body.light {
+  --background-color: var(--secondary-color);
+  --color: var(--primary-color);
+}
+
+body.dark {
+  --background-color: var(--primary-color);
+  --color: var(--secondary-color);
+}
+
+.form-container {
+  display: flex;
+}
+
+@media (min-width: 12.5em) and (max-width: 20.1875em) {
+  .no-task-container .no-task {
+    font-weight: bold;
+    font-size: 0.7rem;
+  }
+}

@@ -1,0 +1,139 @@
+/* .form-control {
+  display: flex;
+    flex-direction: row;
+    align-items: baseline;
+ } */
+
+.form-control input {
+  margin-top: 10rem;
+  display: block;
+  padding: 1rem;
+  width: 39rem;
+  height: 1rem;
+  background: #393e46;
+  border: 1px solid #434242;
+  color: #fff;
+  border-radius: 0.5rem;
+  font-family: var(--font-family);
+}
+
+.form-control input:focus {
+  outline: none;
+  background-color: #34373e;
+  border-color: #242424;
+}
+
+.form-control input::placeholder {
+  width: 7rem;
+  height: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1rem;
+  color: #808080;
+}
+
+.form-control label {
+  color: #fff;
+  mix-blend-mode: difference;
+  font-weight: bold;
+  position: absolute;
+  top: 8.5rem;
+}
+
+.form-control div {
+  display: none;
+}
+
+.submit-btn {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  padding: 1rem;
+  gap: 0.5rem;
+  width: 6.438rem;
+  height: 3rem;
+  margin-top: 1rem;
+  background: #03506f;
+  color: #fff;
+  border: #fff;
+  border-radius: 8px;
+  font-family: var(--font-family);
+  font-weight: bold;
+}
+
+.submit-btn::placeholder {
+  color: #808080;
+}
+
+.form-control.invalid input {
+  background-color: #242424;
+  border-color: #808080;
+}
+
+.form-control.invalid label {
+  display: none;
+}
+
+.form-control.invalid div {
+  mix-blend-mode: difference;
+  display: block;
+  position: absolute;
+  top: 8.5rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+/* BETWEEN 545px and 703px (Special) */ 
+
+@media (min-width: 34em) and (max-width: 44em) {
+  .submit-btn {
+    width: 100%;
+  }
+
+  .form-control input {
+    width: 30rem;
+  }
+}
+
+/* BETWEEN 544px and 324px (Phones) */
+
+@media (min-width: 20.25em) and (max-width: 34em) {
+  .submit-btn {
+    width: 100%;
+  }
+
+  .form-control input {
+    width: 17rem;
+  }
+}
+
+/* BETWEEN 323px and 250px */
+
+@media (min-width: 15.625em) and (max-width: 20.1875em) {
+  .submit-btn {
+    width: 100%;
+  }
+
+  .form-control input {
+    width: 12.5rem;
+  }
+}
+
+/* BETWEEN 249px and 150px */
+
+@media (min-width: 12.5em) and (max-width: 15.5625em) {
+  .submit-btn {
+    width: 100%;
+  }
+
+  .form-control input {
+    width: 9.5rem;
+  }
+
+  .form-control.invalid div {
+    font-size: 0.75rem;
+  }
+
+}
