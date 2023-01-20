@@ -16,13 +16,13 @@ Simple Todo list with react just for practicing different react concepts.
 Clone the project
 
 ```bash
-  git clone https://link-to-project
+  git clone https://github.com/itsteatv/todo-list.git
 ```
 
 Go to the project directory
 
 ```bash
-  cd my-project
+  cd todo-list
 ```
 
 Install dependencies
@@ -34,7 +34,7 @@ Install dependencies
 Start the server
 
 ```bash
-  npm run start
+  npm run dev
 ```
 
 
